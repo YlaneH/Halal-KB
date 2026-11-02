@@ -1,0 +1,6 @@
+# Le tableur reste sur ta machine : il contient des infos web non vérifiées
+# et, plus tard, les contacts des gérants. Seul data/restos.json est publié.
+data/*.xlsx
+~$*.xlsx
+__pycache__/
+.DS_Store

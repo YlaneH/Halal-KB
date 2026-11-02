@@ -1,0 +1,11 @@
+{
+  "name": "Halal KB",
+  "short_name": "Halal KB",
+  "description": "Les restos halal du Kremlin-Bicêtre, vérifiés sur place.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f6f5f1",
+  "theme_color": "#0f6b4f",
+  "lang": "fr",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

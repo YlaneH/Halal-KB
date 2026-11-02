@@ -1,0 +1,142 @@
+{
+  "zone": "Le Kremlin-Bicêtre",
+  "maj": "02/11/2026",
+  "restos": [
+    {
+      "id": "why-not",
+      "nom": "Why Not",
+      "adresse": "39 av. de Fontainebleau",
+      "cuisine": "Burgers",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "le-constant-le-constantinople",
+      "nom": "Le Constant / Le Constantinople",
+      "adresse": "96 av. de Fontainebleau",
+      "cuisine": "Grill turc, kebab",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "fratello-restaurant-lounge",
+      "nom": "Fratello Restaurant Lounge",
+      "adresse": "37 av. de Fontainebleau",
+      "cuisine": "Italien, brunch, chicha",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "krousty-sabaidi",
+      "nom": "Krousty Sabaïdi",
+      "adresse": "63 av. de Fontainebleau",
+      "cuisine": "Thaï / vietnamien",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "sidi-bou-sidibou-kb",
+      "nom": "Sidi Bou (SIDIBOU KB)",
+      "adresse": "16 rue du Général Leclerc",
+      "cuisine": "Tunisien, couscous, tajine",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "o-zaman-specialites-turques",
+      "nom": "O'Zaman Spécialités Turques",
+      "adresse": "20 av. de Fontainebleau",
+      "cuisine": "Kebab turc",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "grill-istanbul-saveurs-d-urfa",
+      "nom": "Grill Istanbul (Saveurs d'Urfa ?)",
+      "adresse": "62 av. de Fontainebleau",
+      "cuisine": "Grill, kebab",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "le-caribeen",
+      "nom": "Le Caribéen",
+      "adresse": "12 av. de Fontainebleau",
+      "cuisine": "Burgers, sandwichs",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "master-poulet",
+      "nom": "Master Poulet",
+      "adresse": "12 av. de Fontainebleau",
+      "cuisine": "Poulet rôti, alloko",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "chicken-street",
+      "nom": "Chicken Street",
+      "adresse": "4 rue du Général Leclerc",
+      "cuisine": "Naan, poulet frit",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "anar",
+      "nom": "Anar",
+      "adresse": "7 rue du 14 Juillet",
+      "cuisine": "Ouïghour, nouilles, grillades",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "five-pizza-original",
+      "nom": "Five Pizza Original",
+      "adresse": "",
+      "cuisine": "Pizza",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "chicken-s-king",
+      "nom": "Chicken's King",
+      "adresse": "",
+      "cuisine": "Poulet",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "al-dabke",
+      "nom": "Al Dabke",
+      "adresse": "",
+      "cuisine": "Libanais (à confirmer)",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "hoi-an-caphe",
+      "nom": "Hoi An Caphe",
+      "adresse": "",
+      "cuisine": "Vietnamien",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "little-vietnam",
+      "nom": "Little Vietnam",
+      "adresse": "",
+      "cuisine": "Vietnamien",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "sweetea-s-paris-13",
+      "nom": "Sweetea's Paris 13",
+      "adresse": "",
+      "cuisine": "Salon de thé / desserts (à confirmer)",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    }
+  ]
+}

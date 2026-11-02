@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Halal KB</title>
+  <meta name="description" content="Les restos halal du Kremlin-Bicêtre, vérifiés sur place.">
+  <meta name="theme-color" content="#0f6b4f">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img src="icon.svg" alt="" width="32" height="32">
+      <div>
+        <h1>Halal KB</h1>
+        <p class="tagline">Les restos halal du Kremlin-Bicêtre, vérifiés sur place</p>
+      </div>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filtrer par statut"></div>
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tab-liste" aria-selected="true">Liste</button>
+      <button role="tab" id="tab-carte" aria-selected="false">Carte</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="vue-liste" class="liste" aria-live="polite"></section>
+    <section id="vue-carte" class="carte" hidden><div id="map"></div></section>
+  </main>
+
+  <dialog id="fiche" aria-labelledby="fiche-nom">
+    <form method="dialog"><button class="fermer" aria-label="Fermer">×</button></form>
+    <div id="fiche-contenu"></div>
+  </dialog>
+
+  <footer class="bas">
+    <p>Les informations sont fournies par les établissements et vérifiées sur place à la date indiquée.
+      Elles ne constituent pas une garantie. En cas de doute, demandez le certificat au restaurant.</p>
+    <p id="maj"></p>
+  </footer>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
