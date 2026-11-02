@@ -59,14 +59,6 @@
       "verifie_le": ""
     },
     {
-      "id": "le-caribeen",
-      "nom": "Le Caribéen",
-      "adresse": "12 av. de Fontainebleau",
-      "cuisine": "Burgers, sandwichs",
-      "statut": "a_verifier",
-      "verifie_le": ""
-    },
-    {
       "id": "master-poulet",
       "nom": "Master Poulet",
       "adresse": "12 av. de Fontainebleau",
@@ -101,7 +93,7 @@
     {
       "id": "chicken-s-king",
       "nom": "Chicken's King",
-      "adresse": "",
+      "adresse": "62 av. de Fontainebleau",
       "cuisine": "Poulet",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -135,6 +127,134 @@
       "nom": "Sweetea's Paris 13",
       "adresse": "",
       "cuisine": "Salon de thé / desserts (à confirmer)",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "a-fole",
+      "nom": "A Folé",
+      "adresse": "6 rue Roger Salengro",
+      "cuisine": "Afro-ivoirien",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "city-crepe",
+      "nom": "City Crêpe",
+      "adresse": "av. de Fontainebleau (n° à trouver)",
+      "cuisine": "Crêperie, desserts",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "o-tacos",
+      "nom": "O'Tacos",
+      "adresse": "63 av. de Fontainebleau",
+      "cuisine": "Tacos",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "o-619-kb",
+      "nom": "O 619 KB",
+      "adresse": "36 av. de Fontainebleau",
+      "cuisine": "Burgers, pizzas, kebab",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "la-toscane",
+      "nom": "La Toscane",
+      "adresse": "11 av. de Fontainebleau",
+      "cuisine": "Italien, pizza",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "la-verriere-danton",
+      "nom": "La Verrière Danton",
+      "adresse": "47 rue Danton",
+      "cuisine": "Restaurant",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "le-p-tit-kb",
+      "nom": "Le P'tit KB",
+      "adresse": "30 av. Eugène Thomas",
+      "cuisine": "Restaurant",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "sesame-et-sel",
+      "nom": "Sésame et Sel",
+      "adresse": "rue Roger Salengro (n° à trouver)",
+      "cuisine": "Restaurant",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "l-ardoise",
+      "nom": "L'Ardoise",
+      "adresse": "rue Edmond Michelet (n° à trouver)",
+      "cuisine": "Italien",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "la-goulette",
+      "nom": "La Goulette",
+      "adresse": "",
+      "cuisine": "Tunisien (à confirmer)",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "le-cedre",
+      "nom": "Le Cèdre",
+      "adresse": "",
+      "cuisine": "Libanais",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "oh-my-french-burger",
+      "nom": "Oh My French Burger",
+      "adresse": "",
+      "cuisine": "Burgers",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "village-du-pacha-le-pacha",
+      "nom": "Village du Pacha / Le Pacha",
+      "adresse": "24 av. de Fontainebleau",
+      "cuisine": "Turc, kebab",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "le-constant-les-3-broches",
+      "nom": "Le Constant – Les 3 Broches",
+      "adresse": "11 rue Roger Salengro",
+      "cuisine": "Turc, kebab",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "royal-pizza",
+      "nom": "Royal Pizza",
+      "adresse": "",
+      "cuisine": "Pizza, tacos",
+      "statut": "a_verifier",
+      "verifie_le": ""
+    },
+    {
+      "id": "papa-chicken",
+      "nom": "Papa Chicken",
+      "adresse": "",
+      "cuisine": "Poulet, burgers",
       "statut": "a_verifier",
       "verifie_le": ""
     }
