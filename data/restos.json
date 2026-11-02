@@ -5,7 +5,7 @@
     {
       "id": "why-not",
       "nom": "Why Not",
-      "adresse": "39 av. de Fontainebleau",
+      "adresse": "39 avenue de Fontainebleau",
       "cuisine": "Burgers",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -13,7 +13,7 @@
     {
       "id": "le-constant-le-constantinople",
       "nom": "Le Constant / Le Constantinople",
-      "adresse": "96 av. de Fontainebleau",
+      "adresse": "96 avenue de Fontainebleau",
       "cuisine": "Grill turc, kebab",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -21,7 +21,7 @@
     {
       "id": "fratello-restaurant-lounge",
       "nom": "Fratello Restaurant Lounge",
-      "adresse": "37 av. de Fontainebleau",
+      "adresse": "37 avenue de Fontainebleau",
       "cuisine": "Italien, brunch, chicha",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -29,7 +29,7 @@
     {
       "id": "krousty-sabaidi",
       "nom": "Krousty Sabaïdi",
-      "adresse": "63 av. de Fontainebleau",
+      "adresse": "63 avenue de Fontainebleau",
       "cuisine": "Thaï / vietnamien",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -45,7 +45,7 @@
     {
       "id": "o-zaman-specialites-turques",
       "nom": "O'Zaman Spécialités Turques",
-      "adresse": "20 av. de Fontainebleau",
+      "adresse": "20 avenue de Fontainebleau",
       "cuisine": "Kebab turc",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -53,7 +53,7 @@
     {
       "id": "grill-istanbul-saveurs-d-urfa",
       "nom": "Grill Istanbul (Saveurs d'Urfa ?)",
-      "adresse": "62 av. de Fontainebleau",
+      "adresse": "62 avenue de Fontainebleau",
       "cuisine": "Grill, kebab",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -61,7 +61,7 @@
     {
       "id": "master-poulet",
       "nom": "Master Poulet",
-      "adresse": "12 av. de Fontainebleau",
+      "adresse": "12 avenue de Fontainebleau",
       "cuisine": "Poulet rôti, alloko",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -85,7 +85,7 @@
     {
       "id": "five-pizza-original",
       "nom": "Five Pizza Original",
-      "adresse": "",
+      "adresse": "8 rue du Général Leclerc",
       "cuisine": "Pizza",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -93,40 +93,8 @@
     {
       "id": "chicken-s-king",
       "nom": "Chicken's King",
-      "adresse": "62 av. de Fontainebleau",
+      "adresse": "62 avenue de Fontainebleau",
       "cuisine": "Poulet",
-      "statut": "a_verifier",
-      "verifie_le": ""
-    },
-    {
-      "id": "al-dabke",
-      "nom": "Al Dabke",
-      "adresse": "",
-      "cuisine": "Libanais (à confirmer)",
-      "statut": "a_verifier",
-      "verifie_le": ""
-    },
-    {
-      "id": "hoi-an-caphe",
-      "nom": "Hoi An Caphe",
-      "adresse": "",
-      "cuisine": "Vietnamien",
-      "statut": "a_verifier",
-      "verifie_le": ""
-    },
-    {
-      "id": "little-vietnam",
-      "nom": "Little Vietnam",
-      "adresse": "",
-      "cuisine": "Vietnamien",
-      "statut": "a_verifier",
-      "verifie_le": ""
-    },
-    {
-      "id": "sweetea-s-paris-13",
-      "nom": "Sweetea's Paris 13",
-      "adresse": "",
-      "cuisine": "Salon de thé / desserts (à confirmer)",
       "statut": "a_verifier",
       "verifie_le": ""
     },
@@ -141,7 +109,7 @@
     {
       "id": "city-crepe",
       "nom": "City Crêpe",
-      "adresse": "av. de Fontainebleau (n° à trouver)",
+      "adresse": "19 avenue de Fontainebleau",
       "cuisine": "Crêperie, desserts",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -149,7 +117,7 @@
     {
       "id": "o-tacos",
       "nom": "O'Tacos",
-      "adresse": "63 av. de Fontainebleau",
+      "adresse": "63 avenue de Fontainebleau",
       "cuisine": "Tacos",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -157,7 +125,7 @@
     {
       "id": "o-619-kb",
       "nom": "O 619 KB",
-      "adresse": "36 av. de Fontainebleau",
+      "adresse": "36 avenue de Fontainebleau",
       "cuisine": "Burgers, pizzas, kebab",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -165,7 +133,7 @@
     {
       "id": "la-toscane",
       "nom": "La Toscane",
-      "adresse": "11 av. de Fontainebleau",
+      "adresse": "11 avenue de Fontainebleau",
       "cuisine": "Italien, pizza",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -181,7 +149,7 @@
     {
       "id": "le-p-tit-kb",
       "nom": "Le P'tit KB",
-      "adresse": "30 av. Eugène Thomas",
+      "adresse": "30 avenue Eugène Thomas",
       "cuisine": "Restaurant",
       "statut": "a_verifier",
       "verifie_le": ""
@@ -189,8 +157,8 @@
     {
       "id": "sesame-et-sel",
       "nom": "Sésame et Sel",
-      "adresse": "rue Roger Salengro (n° à trouver)",
-      "cuisine": "Restaurant",
+      "adresse": "11 bis rue Roger Salengro",
+      "cuisine": "Coréen (à confirmer)",
       "statut": "a_verifier",
       "verifie_le": ""
     },
@@ -203,33 +171,17 @@
       "verifie_le": ""
     },
     {
-      "id": "la-goulette",
-      "nom": "La Goulette",
-      "adresse": "",
-      "cuisine": "Tunisien (à confirmer)",
-      "statut": "a_verifier",
-      "verifie_le": ""
-    },
-    {
       "id": "le-cedre",
       "nom": "Le Cèdre",
-      "adresse": "",
+      "adresse": "2 rue Roger Salengro",
       "cuisine": "Libanais",
-      "statut": "a_verifier",
-      "verifie_le": ""
-    },
-    {
-      "id": "oh-my-french-burger",
-      "nom": "Oh My French Burger",
-      "adresse": "",
-      "cuisine": "Burgers",
       "statut": "a_verifier",
       "verifie_le": ""
     },
     {
       "id": "village-du-pacha-le-pacha",
       "nom": "Village du Pacha / Le Pacha",
-      "adresse": "24 av. de Fontainebleau",
+      "adresse": "24 avenue de Fontainebleau",
       "cuisine": "Turc, kebab",
       "statut": "a_verifier",
       "verifie_le": ""

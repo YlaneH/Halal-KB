@@ -122,18 +122,21 @@ window.addEventListener("hashchange", suivreHash);
 // ---------- Carte ----------
 async function geocoder(r) {
   if (r.lat && r.lng) return [r.lat, r.lng];
-  if (!r.adresse) return null;
-  const cache = stockage("geo") || {};
+  // Sans numéro de rue, la position serait approximative : pas de repère plutôt qu'un faux.
+  if (!/^\d/.test(r.adresse || "")) return null;
+  const cache = stockage("geo-v2") || {};
   const cle = r.adresse;
   if (cache[cle]) return cache[cle];
   try {
-    const url = `https://api-adresse.data.gouv.fr/search/?q=${encodeURIComponent(r.adresse)}&postcode=${CONFIG.codePostal}&limit=1`;
+    const q = `${r.adresse.replace(/\bav\.\s/i, "avenue ")}, ${CONFIG.codePostal} ${CONFIG.ville}`;
+    const url = `https://api-adresse.data.gouv.fr/search/?q=${encodeURIComponent(q)}&type=housenumber&limit=1`;
     const res = await fetch(url);
     const f = (await res.json()).features?.[0];
-    if (!f) return null;
+    // On n'accepte qu'un numéro précis, dans la bonne commune, avec un bon score.
+    if (!f || f.properties.postcode !== CONFIG.codePostal || f.properties.score < 0.6) return null;
     const pos = [f.geometry.coordinates[1], f.geometry.coordinates[0]];
     cache[cle] = pos;
-    stockage("geo", cache);
+    stockage("geo-v2", cache);
     return pos;
   } catch { return null; }
 }

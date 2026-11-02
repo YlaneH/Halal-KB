@@ -74,9 +74,13 @@ def lieux_osm(fichier=None):
 
 
 def geocoder(adresse):
-    url = BAN + "?" + urllib.parse.urlencode({"q": adresse, "postcode": CODE_POSTAL, "limit": 1})
+    q = f"{adresse}, {CODE_POSTAL} Le Kremlin-Bicêtre"
+    url = BAN + "?" + urllib.parse.urlencode({"q": q, "type": "housenumber", "limit": 1})
     feats = http_json(url).get("features", [])
-    if not feats or feats[0]["properties"].get("score", 0) < 0.5:
+    if not feats:
+        return None
+    props = feats[0]["properties"]
+    if props.get("postcode") != CODE_POSTAL or props.get("score", 0) < 0.6:
         return None
     lng, lat = feats[0]["geometry"]["coordinates"]
     return round(lat, 6), round(lng, 6)
@@ -140,7 +144,7 @@ def main():
                 continue
             if not re.match(r"^\d", adresse):  # pas de numéro : trop imprécis
                 continue
-            pos = geocoder(adresse.replace("av.", "avenue"))
+            pos = geocoder(adresse.replace("av. ", "avenue "))
             if pos:
                 ws.cell(r, col["Latitude"]).value, ws.cell(r, col["Longitude"]).value = pos
                 geocodes += 1
