@@ -67,7 +67,7 @@ function rendreListe() {
 
 $("#vue-liste").addEventListener("click", (e) => {
   const c = e.target.closest("[data-id]");
-  if (c) location.hash = "r/" + c.dataset.id;
+  if (c) location.hash = c.dataset.id;
 });
 
 // ---------- Fiche ----------
@@ -109,11 +109,11 @@ function ouvrirFiche(id) {
 }
 
 $("#fiche").addEventListener("close", () => {
-  if (location.hash.startsWith("#r/")) history.replaceState(null, "", location.pathname + location.search);
+  if (location.hash.length > 1) history.replaceState(null, "", location.pathname + location.search);
 });
 
 function suivreHash() {
-  const m = location.hash.match(/^#r\/(.+)$/);
+  const m = location.hash.match(/^#([a-z0-9-]+)$/);
   if (m) ouvrirFiche(decodeURIComponent(m[1]));
   else if ($("#fiche").open) $("#fiche").close();
 }
@@ -140,6 +140,10 @@ async function geocoder(r) {
 
 function initCarte() {
   if (carte) return;
+  if (typeof L === "undefined") {
+    $("#vue-carte").innerHTML = `<p class="vide">La carte n'est pas disponible ici. Ouvre la version en ligne de l'app pour la voir.</p>`;
+    return;
+  }
   carte = L.map("map").setView(CONFIG.centre, 15);
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
@@ -156,7 +160,7 @@ function initCarte() {
   });
   carte.on("popupopen", (e) => {
     e.popup.getElement().querySelector("[data-id]")?.addEventListener("click", (ev) => {
-      location.hash = "r/" + ev.target.dataset.id;
+      location.hash = ev.target.dataset.id;
     });
   });
 }
@@ -174,7 +178,7 @@ function montrer(vue) {
   $("#vue-carte").hidden = !carteActive;
   $("#tab-liste").setAttribute("aria-selected", !carteActive);
   $("#tab-carte").setAttribute("aria-selected", carteActive);
-  if (carteActive) { initCarte(); setTimeout(() => carte.invalidateSize(), 0); }
+  if (carteActive) { initCarte(); if (carte) setTimeout(() => carte.invalidateSize(), 0); }
 }
 $("#tab-liste").addEventListener("click", () => montrer("liste"));
 $("#tab-carte").addEventListener("click", () => montrer("carte"));
@@ -182,8 +186,8 @@ $("#tab-carte").addEventListener("click", () => montrer("carte"));
 // ---------- Démarrage ----------
 const ORDRE = ["certifie", "fournisseur", "declare", "a_verifier"];
 
-fetch("data/restos.json", { cache: "no-cache" })
-  .then((r) => r.json())
+// window.HALAL_DATA permet d'embarquer les données directement dans la page (démo hors ligne).
+(window.HALAL_DATA ? Promise.resolve(window.HALAL_DATA) : fetch("data/restos.json", { cache: "no-cache" }).then((r) => r.json()))
   .then((data) => {
     restos = data.restos.sort((a, b) => ORDRE.indexOf(a.statut) - ORDRE.indexOf(b.statut) || a.nom.localeCompare(b.nom, "fr"));
     $("#maj").textContent = `Mise à jour : ${data.maj} · ${restos.length} restos`;

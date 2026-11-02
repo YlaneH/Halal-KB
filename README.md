@@ -38,7 +38,7 @@ Seules les colonnes vérifiées sur place sont exportées. Ce que dit le web ne 
 python -m http.server 8000
 ```
 
-Puis ouvre http://localhost:8000. Un lien vers une fiche : `http://localhost:8000/#r/why-not`.
+Puis ouvre http://localhost:8000. Un lien vers une fiche : `http://localhost:8000/#why-not`.
 
 ## Mettre en ligne (GitHub Pages)
 
